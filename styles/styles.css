@@ -46,3 +46,49 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+/*********************************
+        MAIN STYLES
+*********************************/
+body { 
+background:hsl(202, 84%, 80%);
+font-family:"Arial", cursive;	
+letter-spacing:3px;
+ }
+  
+
+ h1{
+	font-size:48px;
+	padding:15px 20px 0;
+	color: white;
+    /* three values in padding or margin means: top, left-right, bottom */
+
+}
+
+
+.container{
+    /* set a maximum width for the site to expand, and centre the site in the browser */
+    max-width: 1024px;
+    margin:0 auto;
+    /* with two values in margin or padding, it means: top-bottom, left-right
+    by applying the same amount of margin automatically (auto), this centres
+    the element in its parent */
+    background: hwb(202 73% 0%);
+	}
+
+	
+    
+	footer{
+    /* the position property is kind of like layering - you can assign a specific
+    position to something, and make it be above other things
+    position:fixed assigns a position relative to the browser window */
+    position:fixed;
+    /* you can then assign a specific position, using top or bottom, right or left */
+    bottom:0;
+    right:20%;
+
+    /* you can use a 3D position, using z-index, which will ensure this is always on top
+    of everything on our site */
+    z-index:5; /* this number is arbitrary - by default, everything has a z-index
+    of 1, and higher numbers are on top of that */
+     }
