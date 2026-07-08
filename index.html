@@ -6,99 +6,97 @@
     <title>web1-midterm</title>
     <link href="styles/styles.css" rel="stylesheet">
 </head>
-     <div class="container">
-        <header id="header">
-           <img src="images/lone-starfish-wide.jpg" alt="A starfish at the sand"/>
-    	    <h1>Lone Starfish</h1>
-        </header>
 
-    <nav calss="nav">
-     <a href="HOME">HOME</a>
-     <a href="STORY">STORY</a>  
-     <a href="CONTACT">CONTACT</a>       
-    </nav>
-<body>
-    <!-- this div contains all the HTML on the page, used to wrap the site
-     and, in CSS, set a maximum width -->
- 
+   <!-- This div contains the whole website and keeps the content organized. -->
+     <body>
+           <div class="container">
+            <!-- Header section contains the main image and website title. -->
+           <header class="header-container">
+            <!-- This image is used as the main banner image at the top of the page. -->
+              <img src="images/lone-starfish-wide.jpg" alt="A starfish at the sand" class="header-image">
+    	        <!-- This div places the title text on top of the header image. --> 
+              <div class="header-overlay">
+                <!-- title text -->  
+              <h1>Lone Starfish</h1>
+              </div>
+           </header>
+
+             <!-- Navigation menu helps users move between different sections of the page. -->
+           <nav>
+            <!-- This list contains the navigation links. -->
+            <ul class="nav-links">
+                 <li><a href="#home">HOME</a></li>
+                 <li><a href="#page-width">STORY</a></li>  
+                 <li><a href="#contact">CONTACT</a></li> 
+              </ul>      
+            </nav>
      <main>
-      <section class="parphraph">
+      <div id="page-width">
       <article>
-       <h2>
-        Life of a Starfish </h2>
-      <img src="images/lone-starfish.jpg" alt="star fish in the sea"/>
-      <p>
-         Swallower catla Black angelfish grunter striped bass scissor-tail rasbora; 
-         slender mola. Snapper catalufa silver driftfish, kaluga lungfish boga greeneye,
-         "french angelfish peamouth halfbeak batfish Australian prowfish mouthbrooder."
-         Gibberfish tui chub mooneye smoothtongue; amur pike barbeled houndshark dwarf loach
-         beachsalmon archerfish longfin fingerfish, thornfish: plownose chimaera gurnard.
-         Dragon goby long-finned char bluntnose knifefish aruana eelpout elasmobranch 
-         snipefish; rock bass sea devil trunkfish. Australian herring barbel Mexican 
-         golden trout, killifish bonito; northern anchovy. Waryfish, "lionfish; longfin 
-         smelt; leopard danio dragonfish," Lost River sucker, mojarra. Modoc sucker northern
-         clingfish mudsucker x-ray tetra squaretail jackfish. Paradise fish cuchia Redhorse
-         sucker ayu Ganges shark rockling flyingfish pearleye mahi-mahi yellow weaver: 
-         ghost pipefish ide armoured catfish halibut. Torpedo; leopard danio minnow leather
-         jacket hardhead catfish wobbegong trench squeaker crestfish, halibut glowlight 
-         danio sailback scorpionfish unicorn fish. Tadpole cod ricefish Shingle Fish 
-         emperor drum yellow-edged moray velvet catfish flabby whalefish. Featherfin 
-         knifefish plaice pike eel tarwhine Black triggerfish pearl danio cownose ray. 
-         Merluccid hake, platy peamouth humuhumunukunukuapua'a barred danio. Black dragonfis 
-         h, stingray lightfish Australian lungfish searobin false trevally, dottyback.
-          </p>
-      </section>
-
-
-    <section calss="Facts">
-    <h3>Facts About Starfish</h3>
-    <ul>
-        <li>
-        Australian herring barbel Mexican golden trout, killifish bonito; northern anchovy. 
-        </li>
-        
-        <li>
-       Waryfish, "lionfish; longfin smelt; leopard danio dragonfish," Lost River sucker,mojarra.
-        </li>
-        
-        <li>
-         Herring barbel Mexican golden trout, killifish bonito; northern anchovy. 
-        </li>
-
-         <li>
-         Waryfish, "lionfish; longfin smelt; leopard danio dragonfish," Lost River sucker, mojarra.
-         </li>
-    </ul>
-    </section>
-     
+           <h2> Life of a Starfish </h2>
+                  <!--adds body image-->
+                <img src="images/lone-starfish.jpg" alt="star fish in the sea" class="main-image">
+                <!--adds the paragraph-->
+         <p>Swallower catla Black angelfish grunter striped bass scissor-tail rasbora;slender mola. Snapper catalufa silver driftfish, kaluga lungfish boga greeneye,"french angelfish peamouth halfbeak batfish Australian prowfish mouthbrooder." Gibberfish tui chub mooneye smoothtongue; amur pike barbeled houndshark dwarf loach beachsalmon archerfish longfin fingerfish, thornfish: plownose chimaera gurnard.Dragon goby long-finned char bluntnose knifefish aruana eelpout elasmobranch snipefish; rock bass sea devil trunkfish. Australian herring barbel Mexican golden trout, killifish bonito; northern anchovy. Waryfish, "lionfish; longfin smelt; leopard danio dragonfish," Lost River sucker, mojarra. Modoc sucker norther clingfish mudsucker x-ray tetra squaretail jackfish. Paradise fish cuchia Redhors sucker ayu Ganges shark rockling flyingfish pearleye mahi-mahi yellow weaver: ghost pipefish ide armoured catfish halibut. Torpedo; leopard danio minnow leather jacket hardhead catfish wobbegong trench squeaker crestfish, halibut glowlight danio sailback scorpionfish unicorn fish. Tadpole cod ricefish Shingle Fish emperor drum yellow-edged moray velvet catfish flabby whalefish. Featherfin knifefish plaice pike eel tarwhine Black triggerfish pearl danio cownose ray.Merluccid hake, platy peamouth humuhumunukunukuapua'a barred danio. Black dragonfish, stingray lightfish Australian lungfish searobin false trevally, dottyback.</p>
+      <!-- This section displays interesting facts about starfish. -->
+       <h3>Facts About Starfish</h3>
+       <!-- Unordered list contains starfish facts. -->
+       <ul class="Fact-list">
+          <!-- Each list item shows one fact. -->
+          <li>Australian herring barbel Mexican golden trout, killifish bonito; northern anchovy. </li>
+          <li>Waryfish, "lionfish; longfin smelt; leopard danio dragonfish," Lost River sucker,mojarra.</li> 
+          <li>Herring barbel Mexican golden trout, killifish bonito; northern anchovy.</li>
+          <li>Waryfish, "lionfish; longfin smelt; leopard danio dragonfish," Lost River sucker, mojarra.</li>
+       </ul>
+   
 
   <!-- Contact Form-->
-    <section id="contact">
-    <h3>Contact to learn more</h3>  
-    <form calss="form">
-        
-     <label for="name">Your Name</label>
-     <input type="text" id="name" name="name"/>
-
-     <label for="email">Your Email</label>
-     <input type="email" id="email" name="email"/>
     
-     <label for="message">Your Message</label>
-     <textarea id="message" id="message"></textarea> 
+     <div id="contact">
+   <h3>Contact to learn more</h3>  
+     <!-- Form allows users to send their name, email, and message. --> 
+     <form class="contact-form">
+     <div class="form-group">
+          <label for="name">Your Name</label>
+          <!-- This is a text input where the user types their name. -->
+          <br>
+          <input type="text" id="name" name="name">
+      </div>
+      <div class="form-group">
+          <label for="email">Your Email</label>
+          <br>
+          <input type="email" id="email" name="email">
+      </div>
+      <div class="form-group">
+          <label for="message">Your Message</label>
+          <br>
+         <textarea id="message" name="message"></textarea> 
+     </div>
 
-     <p>Would you like visit the starfish?</p>
-     <input type="radio" id="yes" name="visit" value="yes"/>
-     <label for="yes"> Yes</label>
-     <input type="radio" id="no" name="visit" value="no"/>
-     <label for="no">No</label>
-     <input type="radio" id="Maybe" name="visit" value="maybe"/>
-     <label for="maybe">Maybe</label>
 
+     <!-- Radio buttons for visiting preference. -->
+     <div class="form-group">
+         <p>Would you like to visit the starfish?</p>
+          <!-- User selects one option. -->
+          <input type="radio" id="yes" name="visit" value="yes">
+          <label for="yes">Yes</label>
+
+          <input type="radio" id="no" name="visit" value="no">
+          <label for="no">No</label>
+
+          <input type="radio" id="maybe" name="visit" value="maybe">
+          <label for="maybe">Maybe</label>
+     </div>
+     <!-- Submit button to send the form. -->   
      <button type="submit">SEND</button>
     </form>
-    </section>
+     </div>
+
+     </article>
+    </div>
     </main>
-</body>
- <footer> <p> &copy; Lone Starfish.</p></footer>
- </div>
+    <footer class="footer"> &copy; Lone Starfish.<br></footer>
+    </div>
+    </body>
+
 </html> 

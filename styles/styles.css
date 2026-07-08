@@ -47,48 +47,154 @@ table {
 	border-spacing: 0;
 }
 
-/*********************************
-        MAIN STYLES
-*********************************/
-body { 
-background:hsl(202, 84%, 80%);
-font-family:"Arial", cursive;	
-letter-spacing:3px;
- }
-  
 
- h1{
-	font-size:48px;
-	padding:15px 20px 0;
-	color: white;
-    /* three values in padding or margin means: top, left-right, bottom */
 
+
+
+
+/* ================= BODY ================= */
+/* Reset default spacing and set box sizing. */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* Page background and basic text style. */
+body{
+    background:#b7d5d4;
+    font-family:Arial, Helvetica, sans-serif;
+    line-height:1.6;
+}
+
+/* Main container controls the page width. */
+.container{
+    width:1024px;
+    margin:0 auto;
+    background:#d8ecec;
+}
+
+/* ================= HEADER ================= */
+/* Header image container. */
+.header-container{
+    position:relative;
+}
+
+/* Styles the header image. */
+.header-image{
+    width:100%;
+    height:340px;
+    object-fit:cover;
+    display:block;
+}
+
+/* Positions the title over the image. */
+.header-overlay{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
 }
 
 
-.container{
-    /* set a maximum width for the site to expand, and centre the site in the browser */
-    max-width: 1024px;
-    margin:0 auto;
-    /* with two values in margin or padding, it means: top-bottom, left-right
-    by applying the same amount of margin automatically (auto), this centres
-    the element in its parent */
-    background: hwb(202 73% 0%);
-	}
 
-	
-    
-	footer{
-    /* the position property is kind of like layering - you can assign a specific
-    position to something, and make it be above other things
-    position:fixed assigns a position relative to the browser window */
-    position:fixed;
-    /* you can then assign a specific position, using top or bottom, right or left */
-    bottom:0;
-    right:20%;
+/* Styles the header title. */
+.header-overlay h1{
+    color:white;
+    font-size:60px;
+    font-weight:normal;
+}
 
-    /* you can use a 3D position, using z-index, which will ensure this is always on top
-    of everything on our site */
-    z-index:5; /* this number is arbitrary - by default, everything has a z-index
-    of 1, and higher numbers are on top of that */
-     }
+/* ================= NAV ================= */
+
+/* Navigation menu style. */
+nav{
+    background:#d8ecec;
+}
+
+/* Creates a horizontal navigation list. */
+.nav-links{
+    display:flex;
+    list-style:none;
+}
+
+/* Styles each navigation item. */
+.nav-links li{
+    flex:1;
+    text-align:center;
+}
+
+/* Styles navigation links. */
+.nav-links a{
+    display:block;
+    padding:20px;
+    text-decoration:none;
+}
+
+/* Changes color when hovering. */
+.nav-links a:hover{
+    background:#c5dddd;
+}
+
+
+/* Main content spacing. */
+main{
+    padding:20px;
+}
+
+/* Heading styles. */
+h2, h3{
+    margin-bottom:20px;
+}
+
+
+/* Styles the main image. */
+.main-image{
+    width:250px;
+    float:left;
+}
+
+
+/* Paragraph and list styles. */
+p{
+    text-align:justify;
+}
+
+.Fact-list{
+    margin-left:30px;
+}
+
+
+/* Contact form styles. */
+.contact-form{
+    border:1px solid #000;
+    padding:20px;
+}
+
+/* Adds spacing between form fields. */
+.form-group{
+    margin-bottom:20px;
+}
+
+
+/* Input and textarea styles. */
+input[type="text"],
+input[type="email"],
+textarea{
+    width:100%;
+    padding:10px;
+}
+
+
+/* Button style. */
+button{
+    margin-top:15px;
+    padding:10px 18px;
+}
+
+
+/* Footer style. */
+.footer{
+    text-align:right;
+    padding:30px;
+}
